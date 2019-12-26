@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import './layout.css'
 import * as System from '../../design-system'
+import useTheme from '../store/hooks/useTheme'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,10 +24,15 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const [theme, toggleTheme, setTheme] = useTheme()
 
   return (
-    <System.Theme theme="dark">
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <System.Theme theme={theme}>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        toggleTheme={toggleTheme}
+        setTheme={setTheme}
+      />
       <div
         style={{
           margin: `0 auto`,
