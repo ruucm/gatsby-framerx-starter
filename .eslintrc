@@ -1,0 +1,73 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "wesbos",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module", // Allows for the use of imports
+    "ecmaFeatures": {
+      "jsx": true // Allows for the parsing of JSX
+    }
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "breadcrumbs.enabled": false
+      }
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "padded-blocks": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      // {
+      //   "blankLine": "never",
+      //   "prev": "*",
+      //   "next": "*"
+      // },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["export"]
+      },
+      {
+        "blankLine": "always",
+        "prev": ["export"],
+        "next": "*"
+      }
+    ],
+    "object-property-newline": "error",
+    // ignores
+    "import/no-unresolved": 0,
+    "quotes": 0,
+    "prefer-destructuring": 0,
+    "global-require": 0,
+    "react/button-has-type": 0,
+    "react/jsx-filename-extension": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "no-shadow": 0,
+    "react/prop-types": 0,
+    "no-unused-expressions": 0,
+    "@typescript-eslint/indent": 0,
+    "no-nested-ternary": 0,
+    "prefer-template": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "import/no-duplicates": 0,
+    "no-case-declarations": 0,
+    "react-hooks/exhaustive-deps": 0
+  }
+}
