@@ -29,3 +29,4 @@ npm run dev or yarn dev
 1. typescript support
 1. eslint (To maintain same code styles, it includes simple lint rules at `.eslintrc`)
 1. removing css from browsers (reset-css-in-web.css, reset-css-in-framer.css)
+1. redux + redux hook
