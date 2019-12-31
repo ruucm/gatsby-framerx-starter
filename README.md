@@ -10,7 +10,7 @@ A Starter for Static Site Generator who wants make a Design System using Framer 
 npm install -g gatsby-cli or yarn global add gatsby-cli
 ```
 
-2. Install modules
+2. Creating a new Project
 
 ```
 gatsby new gatsby-site git@github.com:ruucm/gatsby-framerx-starter.git
