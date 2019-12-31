@@ -13,12 +13,14 @@ npm install -g gatsby-cli or yarn global add gatsby-cli
 2. Install modules
 
 ```
-npm run install or yarn install
+gatsby new gatsby-site git@github.com:ruucm/gatsby-framerx-starter.git
 ```
 
 2. Start Development
 
 ```
+cd gatsby-site
+
 npm run dev or yarn dev
 ```
 
