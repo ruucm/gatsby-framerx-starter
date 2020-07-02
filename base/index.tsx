@@ -1,6 +1,6 @@
 const font = {
-  type1: 'CircularPro',
-  type2: "'CircularPro', 'Noto Sans KR'",
+  type1: 'Montserrat',
+  type2: "'Montserrat', 'Noto Sans KR'",
 }
 const transitions = {
   short: {
